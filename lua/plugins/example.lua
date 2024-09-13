@@ -108,19 +108,6 @@ return {
         -- ["*"] = function(server, opts) end,
       },
     },
-    config = function()
-      require("lspconfig").gopls.setup({
-        settings = {
-          gopls = {
-            ui = {
-              completion = {
-                usePlaceholders = true,
-              },
-            },
-          },
-        },
-      })
-    end,
   },
 
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,

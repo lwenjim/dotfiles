@@ -3,5 +3,5 @@
 -- Add any additional keymaps here
 -- Disable continuations
 local map = LazyVim.safe_keymap_set
-map("n", "<tab>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
-map("n", "<c-tab>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+map("n", "<c-tab>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
