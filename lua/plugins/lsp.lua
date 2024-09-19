@@ -1,5 +1,4 @@
 return {
-  -- tools
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -38,8 +37,6 @@ return {
     },
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
-
-      -- MDX
       vim.filetype.add({
         extension = {
           mdx = "mdx",
